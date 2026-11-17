@@ -10,10 +10,14 @@ from pydantic import BaseModel
 from core.agent import EnterpriseAnalyticsAgent
 from core.edtech_agent import EdTechInquiryAgent
 
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+DB_PATH = os.path.join(BASE_DIR, "db", "enterprise_dw.sqlite")
+DATA_DIR = os.path.join(BASE_DIR, "data")
+
 app = FastAPI(title="Enterprise AI Analytics Agent - BI Demo")
 
-agent = EnterpriseAnalyticsAgent(db_path="db/enterprise_dw.sqlite")
-edtech_agent = EdTechInquiryAgent(data_dir="data")
+agent = EnterpriseAnalyticsAgent(db_path=DB_PATH)
+edtech_agent = EdTechInquiryAgent(data_dir=DATA_DIR)
 
 class EdTechInquiryRequest(BaseModel):
     inquiry_text: str
@@ -40,15 +44,21 @@ class FileUploadPayload(BaseModel):
 
 @app.get("/", response_class=HTMLResponse)
 async def serve_index(request: Request):
-    with open("templates/index.html", "r", encoding="utf-8") as f:
+    index_path = os.path.join(BASE_DIR, "index.html")
+    if not os.path.exists(index_path):
+        index_path = os.path.join(BASE_DIR, "templates", "index.html")
+    with open(index_path, "r", encoding="utf-8") as f:
         html_content = f.read()
     return HTMLResponse(content=html_content)
 
 @app.get("/bi", response_class=HTMLResponse)
 async def serve_bi_dashboard(request: Request):
-    with open("templates/bi_dashboard.html", "r", encoding="utf-8") as f:
-        html_content = f.read()
-    return HTMLResponse(content=html_content)
+    bi_path = os.path.join(BASE_DIR, "templates", "bi_dashboard.html")
+    if os.path.exists(bi_path):
+        with open(bi_path, "r", encoding="utf-8") as f:
+            html_content = f.read()
+        return HTMLResponse(content=html_content)
+    return HTMLResponse(content="<h1>BI Dashboard</h1>")
 
 @app.post("/api/edtech/process")
 async def process_edtech_inquiry(req: EdTechInquiryRequest):
