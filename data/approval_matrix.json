@@ -1,0 +1,46 @@
+{
+  "discount_tiers": [
+    {
+      "tier": "Tier 1",
+      "min_discount": 0,
+      "max_discount": 10,
+      "approver_role": "Sales_Representative",
+      "auto_approve": true,
+      "sla_hours": 0
+    },
+    {
+      "tier": "Tier 2",
+      "min_discount": 11,
+      "max_discount": 20,
+      "approver_role": "Sales_Manager (Trưởng phòng KD)",
+      "auto_approve": false,
+      "sla_hours": 4
+    },
+    {
+      "tier": "Tier 3",
+      "min_discount": 21,
+      "max_discount": 35,
+      "approver_role": "Executive_Director (Ban Giám Đốc)",
+      "auto_approve": false,
+      "sla_hours": 12
+    }
+  ],
+  "special_triggers": [
+    {
+      "trigger": "SLA_VIOLATION",
+      "condition": "Requested lead time < Standard SLA",
+      "approver": "Operations_Head",
+      "action": "Xác nhận khả năng đáp ứng GPU khẩn cấp"
+    },
+    {
+      "trigger": "MISSING_BUDGET",
+      "condition": "Budget is null or below minimum price",
+      "action": "Kích hoạt phản hồi hỏi lại khách hàng (Clarification Email)"
+    },
+    {
+      "trigger": "OUTDATED_PRICE",
+      "condition": "Inquiry references legacy price",
+      "action": "Tự động điều chỉnh về Bảng giá 2026 kèm giải thích"
+    }
+  ]
+}

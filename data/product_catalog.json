@@ -1,0 +1,52 @@
+[
+  {
+    "sku": "AI-WRT-01",
+    "product_name": "AI Writing Assistant & Grammar Pro",
+    "description": "Công cụ AI hỗ trợ viết tiểu luận, chỉnh sửa ngữ pháp, gợi ý cấu trúc học thuật và kiểm tra trùng lặp",
+    "target_audience": "Sinh viên khối ngành Xã hội, Kinh tế, Ngoại ngữ",
+    "unit_price_monthly": 49000,
+    "unit_price_yearly": 490000,
+    "min_quantity": 10,
+    "effective_date": "2026-01-01"
+  },
+  {
+    "sku": "AI-RES-02",
+    "product_name": "AI Research & Paper Summarizer",
+    "description": "Trợ lý AI đọc và tóm tắt bài báo khoa học PDF (ArXiv, IEEE), trích xuất citation chuẩn APA/IEEE",
+    "target_audience": "Sinh viên làm khóa luận, Nghiên cứu sinh, CLB NCKH",
+    "unit_price_monthly": 79000,
+    "unit_price_yearly": 790000,
+    "min_quantity": 5,
+    "effective_date": "2026-01-01"
+  },
+  {
+    "sku": "AI-COD-03",
+    "product_name": "AI Code Tutor & Debugger Pro",
+    "description": "Gợi ý thuật toán, sửa lỗi code (Python, C++, Java, JS), giải thích lỗi đồ án chuyên ngành CNTT",
+    "target_audience": "Sinh viên khối Kỹ thuật, Lập trình, Khoa học dữ liệu",
+    "unit_price_monthly": 99000,
+    "unit_price_yearly": 990000,
+    "min_quantity": 10,
+    "effective_date": "2026-01-01"
+  },
+  {
+    "sku": "AI-SLD-04",
+    "product_name": "AI Presentation & Slide Generator",
+    "description": "Tự động tạo outline, bài thuyết trình PowerPoint/Canva từ nội dung tài liệu học tập trong 30 giây",
+    "target_audience": "Toàn thể sinh viên làm bài tập nhóm",
+    "unit_price_monthly": 69000,
+    "unit_price_yearly": 690000,
+    "min_quantity": 10,
+    "effective_date": "2026-01-01"
+  },
+  {
+    "sku": "AI-CAMPUS-COMBO",
+    "product_name": "Campus All-in-One AI Suite (Trọn gói)",
+    "description": "Bộ công cụ đầy đủ 4 trong 1 tích hợp SSO email trường (.edu.vn), có dashboard quản trị cho giảng viên",
+    "target_audience": "Khoa / Viện / Trường Đại học mua tập trung",
+    "unit_price_monthly": 149000,
+    "unit_price_yearly": 199000,
+    "min_quantity": 100,
+    "effective_date": "2026-01-01"
+  }
+]

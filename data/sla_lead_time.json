@@ -1,0 +1,22 @@
+[
+  {
+    "user_range": "1 - 50 tài khoản",
+    "min_lead_time_days": 1,
+    "description": "Tự động cấp phát tài khoản qua email trong 24 giờ"
+  },
+  {
+    "user_range": "51 - 200 tài khoản",
+    "min_lead_time_days": 3,
+    "description": "Cấp phát tài khoản hàng loạt theo danh sách Excel của lớp/khoa"
+  },
+  {
+    "user_range": "201 - 1,000 tài khoản",
+    "min_lead_time_days": 5,
+    "description": "Cấu hình phân vùng GPU riêng, tài liệu hướng dẫn và demo kỹ thuật"
+  },
+  {
+    "user_range": "Trên 1,000 tài khoản",
+    "min_lead_time_days": 10,
+    "description": "Tích hợp xác thực Single Sign-On (Google Workspace/Office 365 .edu.vn)"
+  }
+]

@@ -1,0 +1,27 @@
+{
+  "report_timestamp": "2026-11-17T08:00:00+07:00",
+  "gpu_cluster_status": "Healthy (Utilization: 72%)",
+  "available_capacity": {
+    "AI-WRT-01": {
+      "available_slots": 5200,
+      "status": "In Stock"
+    },
+    "AI-RES-02": {
+      "available_slots": 2100,
+      "status": "In Stock"
+    },
+    "AI-COD-03": {
+      "available_slots": 850,
+      "status": "Constrained"
+    },
+    "AI-SLD-04": {
+      "available_slots": 3400,
+      "status": "In Stock"
+    },
+    "AI-CAMPUS-COMBO": {
+      "available_slots": 1500,
+      "status": "Requires Operations Pre-allocation"
+    }
+  },
+  "weekly_onboarding_capacity_remaining": 6
+}

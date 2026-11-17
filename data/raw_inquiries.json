@@ -1,0 +1,42 @@
+[
+  {
+    "inquiry_id": "INQ-202611-001",
+    "received_at": "2026-11-16 08:30:00",
+    "channel": "Form Website",
+    "sender_name": "TS. Nguyễn Hoàng Nam",
+    "sender_email": "nam.nh@hust.edu.vn",
+    "organization": "Khoa CNTT - ĐH Bách Khoa Hà Nội",
+    "raw_text": "Chào công ty, Khoa chúng tôi đang cần mua tài khoản AI Code Tutor cho 300 sinh viên làm đồ án tốt nghiệp học kỳ 1. Ngân sách dự kiến của Khoa khoảng 25,000,000 VNĐ. Chúng tôi cần triển khai gấp trong vòng 2 ngày tới để kịp sinh viên nộp đề cương. Đề nghị chiết khấu 15% cho khối trường đại học kỹ thuật.",
+    "expected_issue": "Yêu cầu gấp 2 ngày (vi phạm SLA chuẩn 5 ngày) + Chiết khấu 15% (vượt quyền Sales Rep, cần Trưởng phòng duyệt)."
+  },
+  {
+    "inquiry_id": "INQ-202611-002",
+    "received_at": "2026-11-16 09:15:00",
+    "channel": "Email Khách hàng",
+    "sender_name": "Bạn Trần Thảo Linh",
+    "sender_email": "linhtt.club@neu.edu.vn",
+    "organization": "CLB Sinh viên Nghiên cứu Khoa học ĐH Kinh Tế Quốc Dân",
+    "raw_text": "Dạ em chào anh/chị, CLB em gồm 50 thành viên muốn mua gói AI Research & Paper Summarizer trong 1 năm để phục vụ đợt thi NCKH cấp Bộ sắp tới. Ngân sách tụi em gom được khoảng 35,000,000 VNĐ. Bên mình có thể xuất hóa đơn tài chính và triển khai trong 5 ngày tới được không ạ?",
+    "expected_issue": "Ca chuẩn, đủ ngân sách, đúng SLA, chiết khấu 0% -> Tự động duyệt và sinh bản nháp báo giá ngay."
+  },
+  {
+    "inquiry_id": "INQ-202611-003",
+    "received_at": "2026-11-16 11:20:00",
+    "channel": "Email Khách hàng",
+    "sender_name": "ThS. Lê Minh Quân",
+    "sender_email": "quanlm@vnu.edu.vn",
+    "organization": "Trường Quốc tế - ĐHQGHN",
+    "raw_text": "Trường chúng tôi quan tâm đến bộ giải pháp AI cho sinh viên gồm AI Writing và AI Presentation cho khoảng 600 sinh viên. Chúng tôi chưa chốt được ngân sách chính xác, nhờ bên bạn tư vấn các gói giá ưu đãi nhất và gửi proposal giúp.",
+    "expected_issue": "Thiếu ngân sách (Missing budget) -> AI Agent tự động sinh câu hỏi gợi mở xác định ngân sách và đề xuất 2 phương án (Tier ngân sách tối thiểu vs tối ưu)."
+  },
+  {
+    "inquiry_id": "INQ-202611-004",
+    "received_at": "2026-11-16 14:40:00",
+    "channel": "Form Website",
+    "sender_name": "Thầy Vũ Đình Trọng",
+    "sender_email": "trongvd@fpt.edu.vn",
+    "organization": "Cao đẳng FPT Polytechnic",
+    "raw_text": "Chúng tôi cần trang bị Campus All-in-One cho 1,500 sinh viên nhập học đợt tháng 12. Thời hạn cần bàn giao là 15 ngày. Vì số lượng rất lớn, trường đề xuất mức chiết khấu 30% trên tổng giá trị hợp đồng.",
+    "expected_issue": "Quy mô lớn 1,500 tài khoản + Chiết khấu 30% (vượt quá 20% của Trưởng phòng, cần chuyển duyệt lên Ban Giám Đốc)."
+  }
+]
